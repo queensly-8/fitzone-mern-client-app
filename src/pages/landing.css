@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* Navbar */
+.navbar {
+    background-color: transparent; /* Make navbar background transparent */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it's on top of other content */
+    color: black;
+}
+
+.nav-link {
+    font-size: 25px; /* Adjust the font size as needed */
+    font-family: "Oswald", sans-serif;
+}
+
+.nav-link:hover {
+    color: #aaffaa; /* Hover color */
+}
+
+/* Landing */
+.text {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#landing {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hide overflowing video */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/jog2.jpg");
+    font-family: "Oswald", sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: black;
+    border-radius: 50px;
+}
+
+.btn:hover {
+    background-color: orange;
+    color: black;
+}

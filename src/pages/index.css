@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+*{
+    animation: transitionIn 0.75s;
+}
+
+/* Navbar */
+#transparentbg {
+    background-color: transparent !important; /* Make navbar background transparent */
+    position: absolute; /* Position it inside the landing section */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it is above other elements */
+}
+
+#transparentbg .nav-link {
+    font-size: 30px;
+    font-family: "Oswald", sans-serif;
+    color: #fff;
+    margin: 20px;
+}
+#transparentbg .nav-link:hover {
+    color: orange; /* Hover color */
+}
+
+/* Main Content */
+.text {
+    margin-top: 30px; /* Add top margin to compensate for fixed navbar */
+    margin-bottom: 10px;
+}
+
+#landing {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hide overflowing video */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/jog2.jpg");
+    font-family: "Oswald", sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+button.btn{
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: black;
+    border-radius: 50px;
+    
+}
+.submit-container button.btn{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: black;
+    border-radius: 50px;
+}
+
+button.btn:hover {
+    background-color: orange;
+    color: black;
+}
+
+footer{
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/* Additional Styles */
+.container1 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 110px;
+    width: 600px;
+    background: linear-gradient(beige, white);
+    padding-bottom: 30px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.header .text {
+    color: black;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.inputs {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 480px;
+    height: 80px;
+    background: #eaeaea;
+    border-radius: 30px;
+}
+
+.input input {
+    height: 50px;
+    width: 400px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #797979;
+    font-size: 19px;
+}
+
+.header a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.submit-container {
+    display: flex;
+    gap: 30px;
+    margin: 60px auto;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 59px;
+    color: #fff;
+    background: black;
+    border-radius: 50px;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.note {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.register {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Tracker */
+.navtracker{
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    background: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+#top #tracker {
+    position: relative;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hide overflowing video */
+    background: linear-gradient(rgb(245, 209, 49), white);
+    font-family: "Oswald", sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.profile-container {
+    margin-top: 20px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image covers the container */
+    border: 2px solid #fff; /* Optional: Add a white border */
+}
+
+.profile-name {
+    margin-top: 10px;
+    font-size: 2rem;
+    color: #fff; /* Change color if needed */
+    font-family: "Oswald", sans-serif;
+}
+footer.footer {
+    font-family: "Oswald", sans-serif;
+    background: transparent;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust height as needed */
+    color: white; /* Ensure text is readable */
+    text-align: center; /* Center text horizontally */
+}
+@keyframes transitionIn{
+    from{
+      opacity: 0;
+      transform: rotateX(-10deg);
+    }
+    to{
+      opacity: 1;
+      transform: rotateX(0);
+    }
+  }
